@@ -1,9 +1,9 @@
-export class TattooDesign {
-  public id?: number;
-  public title?: string;
-  public category?: string;
-  public imageURL?: string;
-  public description?: string;
+export interface TattooDesignOptions {
+  id: number;
+  title: string;
+  category: string;
+  imageURL: string;
+  description: string;
 }
 
 

@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
-<app-tattoo-gallery></app-tattoo-gallery>
+
+<h2>please select an option:</h2>
+<section class="results">
+      @for(tattooOptions of tattooOptions; track $index) {
+        <app-tattoo-gallery [tattooOptions]="tattooOptions"></app-tattoo-gallery>
+      }
+</section>

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { TattooDesign } from '../tattoo-gallery';
+import { Component, input } from '@angular/core';
+import { TattooDesignOptions } from '../tattoo-gallery';
 
 @Component({
   selector: 'app-tattoo-gallery',
@@ -8,19 +8,5 @@ import { TattooDesign } from '../tattoo-gallery';
   styleUrl: './tattoo-gallery.component.css'
 })
 export class TattooGalleryComponent {
-  tattooOption1: TattooDesign = {
-      id: 1,
-      title: 'A1',
-      category: 'Flash',
-      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQ6wLbAn7aIIt23c-fPy3Wp0HcYqJYj-4cw&s',
-      description: 'Pepe The Frog'
-    };
-
-    tattooOption2: TattooDesign = {
-      id: 2,
-      title: 'A2',
-      category: 'Flash',
-      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU44pORy1uY_CYPpUs5unLlKhOAulnNgRosA&s',
-      description: 'Pepe The Frog'
-    };
+  tattooOptions = input.required<TattooDesignOptions>();
 }

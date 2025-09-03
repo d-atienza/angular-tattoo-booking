@@ -1,11 +1,16 @@
-<h2>please select an option:</h2>
 
-<button><p>{{tattooOption1.title}}</p>
-<p>{{tattooOption1.category}}</p>
-<img src={{tattooOption1.imageURL}}></button>
+<button>
+<section class="listing">
+      <img
+        class="listing-photo"
+        [src]="tattooOptions().imageURL"
+        alt="Exterior photo of {{ tattooOptions().description }}"
+        crossorigin
+      />
+      <h2 class="listing-heading">{{ tattooOptions().title }}</h2>
+      <p class="listing-location">{{ tattooOptions().category }}</p>
+</section>
+</button>
 
-<button><p>{{tattooOption2.title}}</p>
-<p>{{tattooOption2.category}}</p>
-<img src={{tattooOption2.imageURL}}></button>
 
 
