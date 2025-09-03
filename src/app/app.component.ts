@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TattooGalleryComponent } from './tattoo-gallery/tattoo-gallery.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TattooGalleryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
