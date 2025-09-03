@@ -1,15 +1,15 @@
 
 <button>
-<section class="listing">
+    <div class="option">
       <img
-        class="listing-photo"
+        class="option-image"
         [src]="tattooOptions().imageURL"
-        alt="Exterior photo of {{ tattooOptions().description }}"
+        alt="Exterior image of {{ tattooOptions().description }}"
         crossorigin
       />
-      <h2 class="listing-heading">{{ tattooOptions().title }}</h2>
-      <p class="listing-location">{{ tattooOptions().category }}</p>
-</section>
+      <h2 class="option-heading">{{ tattooOptions().title }}</h2>
+      <p class="option-category">{{ tattooOptions().category }}</p>
+      </div>
 </button>
 
 
