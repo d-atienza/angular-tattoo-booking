@@ -8,11 +8,19 @@ import { TattooDesign } from '../tattoo-gallery';
   styleUrl: './tattoo-gallery.component.css'
 })
 export class TattooGalleryComponent {
-  tattooOption: TattooDesign = {
+  tattooOption1: TattooDesign = {
       id: 1,
       title: 'A1',
       category: 'Flash',
-      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbdu9R6o5u4bjK6jXT76WIKsiMKPXW007JQ&s',
+      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQ6wLbAn7aIIt23c-fPy3Wp0HcYqJYj-4cw&s',
+      description: 'Pepe The Frog'
+    };
+
+    tattooOption2: TattooDesign = {
+      id: 2,
+      title: 'A2',
+      category: 'Flash',
+      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU44pORy1uY_CYPpUs5unLlKhOAulnNgRosA&s',
       description: 'Pepe The Frog'
     };
 }
