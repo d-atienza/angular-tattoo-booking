@@ -33,7 +33,7 @@ export class TattooDetailsComponent implements OnInit {
 
   //   selectedSize = '2 inches';
 
-  selectedBodyPart = [2];
+  selectedBodyPart = [1];
 	bodyParts = [
       { id: 1, label: 'Arm (Upper)' },
       { id: 2, label: 'Arm (Lower)' },
@@ -43,7 +43,7 @@ export class TattooDetailsComponent implements OnInit {
       { id: 6, label: 'Back (Lower)', disabled: true },
   ];
 
-selectedSize = [2];
+selectedSize = [1];
 
   sizes = [
       { id: 1, label: '2 inches' },
