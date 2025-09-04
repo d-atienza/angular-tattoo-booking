@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { TattooGalleryComponent } from './tattoo-gallery/tattoo-gallery.component';
 import { TattooDesignOptions } from './tattoo-gallery';
+import { TattooDetailsComponent } from './tattoo-details/tattoo-details.component';
 
 @Component({
   selector: 'app-root',
-  imports: [TattooGalleryComponent],
+  imports: [TattooGalleryComponent, TattooDetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

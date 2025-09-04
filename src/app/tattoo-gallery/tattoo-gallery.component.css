@@ -1,11 +1,15 @@
 button {
+  background-color: white;
   border-radius: 30px;
   margin: 1rem;
- 
+
+  & :hover {
+    background-color: pink;
+  }
 }
 
 .option {
-  background: white;
+  background-color: white;
   border-radius: 30px;
   padding: 1rem;
 }
