@@ -12,27 +12,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class TattooDetailsComponent implements OnInit {
 
-    // bodyParts : BodyPartOptions[] = [
-    //   { id: 1, name: 'Arm (Upper)' },
-    //   { id: 2, name: 'Arm (Lower)' },
-    //   { id: 3, name: 'Leg (Upper)' },
-    //   { id: 4, name: 'Leg (Lower)' },
-    //   { id: 5, name: 'Back (Upper)' },
-    //   { id: 6, name: 'Back (Lower)' },
-  // ]
-  //   selectedBodyPart = 'Arm (Upper)';
-
-
-  // sizes : SizeOptions[] = [
-  //   { id: 1, size: '2 inches' },
-  //   { id: 2, size: '3 inches' },
-  //   { id: 3, size: '4 inches' },
-  //   { id: 4, size: '5 inches' },
-  //   { id: 5, size: '6 inches' },
-  // ]
-
-  //   selectedSize = '2 inches';
-
   selectedBodyPart = [1];
 	bodyParts = [
       { id: 1, label: 'Arm (Upper)' },
