@@ -1,1 +1,20 @@
-<p>tattoo placement & size</p>
+<div class="dropdown-selection">
+<p> If the area is not included in the dropdown list, it is not available to be tattooed on at the moment.</p>
+<p> Please select the area on your body that you would like the tattoo to be done on:</p>
+<!-- body part selection -->
+<ng-select [multiple]="true" [(ngModel)]="selectedBodyPart">
+	@for (bodyPart of bodyParts; track bodyParts) {
+		<ng-option [value]="bodyPart.id" [disabled]="bodyPart.disabled">{{ bodyPart.label }}</ng-option>
+	}
+</ng-select>
+</div>
+<br/>
+<div class="dropdown-selection">
+<p> Please select the size of the tattoo you would like done:</p>
+<!-- size selection -->
+<ng-select [multiple]="true" [(ngModel)]="selectedSize">
+	@for (size of sizes; track sizes) {
+		<ng-option [value]="size.id" [disabled]="size.disabled">{{ size.label }}</ng-option>
+	}
+</ng-select>
+</div>
