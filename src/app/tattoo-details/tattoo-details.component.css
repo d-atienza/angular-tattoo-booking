@@ -1,5 +1,3 @@
 .dropdown-selection {
-    border-color: black;
-    border: 0.5rem;
-    border-radius: 2rem;
+    background-color: lightgray;
 }
