@@ -10,8 +10,6 @@ interface ContactForm {
   additionalNotes: string,
 }
 
-
-
 @Component({
   selector: 'app-form-details',
   imports: [FormsModule],
@@ -21,6 +19,7 @@ interface ContactForm {
 
 export class FormDetailsComponent {
   
+  // contact details
   form : ContactForm = {
     firstName: '',
     lastName: '',
@@ -29,9 +28,8 @@ export class FormDetailsComponent {
     additionalNotes: '',
   }
 
-  send() {
+  submit() {
     console.log(this.form)
-
 
     emailjs.send('service_zm2klxz', 'template_mv5bhni', {...this.form}, {publicKey: '2RTRStL7xKPYzKNMx'})
       .then(
@@ -45,5 +43,4 @@ export class FormDetailsComponent {
           console.log('Failed :(', (error as EmailJSResponseStatus).text);
         },)
   }
-
 }
