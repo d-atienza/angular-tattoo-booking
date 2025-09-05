@@ -1,15 +1,33 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<div >
+<nav class="navbar sticky-top navbar-dark bg-dark">
+  <div class="container-md">
+    <!-- <a class="navbar-brand" href="#">
+      <img src="" alt="" width="35" height="35" class="d-inline-block align-text-top">
+    </a> -->
+    <a class="navbar-brand " href="#Designs">Designs</a>
+    <a class="navbar-brand " href="#Details">Details</a>
+    <a class="navbar-brand " href="#Booking">Booking</a>
+    <a class="navbar-brand " href="#Contact">Contact</a>
+  </div>
+</nav>
+</div>
+
 <h1>{{title}}</h1>
 
+<br/>
 <h2>please select an option:</h2>
-<section class="results">
+<section class="results" id="Designs">
       @for(tattooOptions of tattooOptions; track $index) {
         <app-tattoo-gallery [tattooOptions]="tattooOptions"></app-tattoo-gallery>
       }
 </section>
-<section>
+<br/>
+<section id="Details">
   <app-tattoo-details></app-tattoo-details>
 </section>
-
-<section>
+<br/>
+<section id="Contact">
   <app-form-details></app-form-details>
 </section>

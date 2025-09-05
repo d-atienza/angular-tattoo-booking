@@ -1,5 +1,5 @@
-
-<form [formGroup]="profileForm" (ngSubmit)="onSubmit()"> 
+<aside>All fields are required.</aside>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" > 
   <h2>Personal Details</h2>
     <div class="mb-3">
     <label class="form-label" for="firstName">First Name: </label>
@@ -20,11 +20,15 @@
         <label class="form-label" for="mobile">Mobile: </label>
         <input class="form-control" id="mobile" type="phone" formControlName="mobile" />
         </div>
-      </div>
+        </div>
 
     <div class="mb-3">
     <label class="form-label" for="additionalNotes">Additional Notes: </label>
     <input class="form-control" id="additionalNotes" type="text" formControlName="additionalNotes" />
+    </div>
+
+    <div class="input-group mb-3">
+    <p>For custom designs, reference photos can be provided once your request has been reviewed by the tattooist.</p>
     </div>
     
     <p>Complete the form to enable button.</p>
