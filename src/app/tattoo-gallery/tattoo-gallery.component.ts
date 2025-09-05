@@ -10,7 +10,9 @@ import { TattooDesignOptions } from '../tattoo-gallery';
 export class TattooGalleryComponent {
   tattooOptions = input.required<TattooDesignOptions>();
 
+  
+
   showMSG() {
-    console.log('design selected');
+    console.log(this.tattooOptions().title + ' design has been selected');
   }
 }
