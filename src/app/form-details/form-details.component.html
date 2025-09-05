@@ -1,4 +1,22 @@
 <aside>All fields are required.</aside>
+
+  <input type="text" placeholder="First Name" [(ngModel)]="form.firstName">
+  <br/>
+  <input type="text" placeholder="Last Name" [(ngModel)]="form.lastName">
+  <br/>
+  <input type="email" placeholder="Email" [(ngModel)]="form.email">
+  <br/>
+  <input type="text" placeholder="Mobile" [(ngModel)]="form.mobile">
+  <br/>
+  <textarea placeholder="Additional Notes" [(ngModel)]="form.additionalNotes"></textarea>
+  <br/>
+  <button (click)="send()">Submit</button>
+
+
+
+  
+
+<!-- <aside>All fields are required.</aside>
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" > 
   <h2>Personal Details</h2>
     <div class="mb-3">
@@ -32,5 +50,5 @@
     </div>
     
     <p>Complete the form to enable button.</p>
-    <button class="btn btn-dark" type="submit" [disabled]="!profileForm.valid">Submit</button>
-  </form>
+    <button class="btn btn-dark" type="submit" [disabled]="!profileForm.valid" (click)="onSubmit()">Submit</button>
+  </form> -->  

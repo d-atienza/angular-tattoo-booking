@@ -1,27 +1,43 @@
 import { Component } from '@angular/core';
-import {FormGroup, FormControl, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+
+interface ContactForm {
+  firstName: string,
+  lastName: string,
+  email: string,
+  mobile: string,
+  additionalNotes: string,
+}
 
 @Component({
   selector: 'app-form-details',
-  imports: [ReactiveFormsModule],
+  imports: [FormsModule],
   templateUrl: './form-details.component.html',
   styleUrl: './form-details.component.css'
 })
+
 export class FormDetailsComponent {
-  profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    contact: new FormGroup({
-      email: new FormControl(''),
-      mobile: new FormControl(''),
-    }),
-    additionalNotes: new FormControl(''),
-  });
-
-
-
-  onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.warn(this.profileForm.value);
+  form : ContactForm = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    mobile: '',
+    additionalNotes: '',
   }
+
+  send() {
+    console.log(this.form)
+
+    emailjs.send('service_zm2klxz', 'template_mv5bhni', {...this.form}, {publicKey: '2RTRStL7xKPYzKNMx'})
+      .then(
+        () => {
+          
+          console.log('Sent!');
+        },
+        (error) => {
+          console.log('Failed :(', (error as EmailJSResponseStatus).text);
+        },)
+  }
+
 }
