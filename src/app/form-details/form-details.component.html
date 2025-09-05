@@ -1,33 +1,32 @@
-<div class="form-details">
+
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()"> 
-    <h2>Name</h2>
-    <div>
-    <label for="firstName">First Name: </label>
-    <input id="firstName" type="text" formControlName="firstName" />
+  <h2>Personal Details</h2>
+    <div class="mb-3">
+    <label class="form-label" for="firstName">First Name: </label>
+    <input class="form-control" id="firstName" type="text" formControlName="firstName" />
     </div>
-    <div>
-    <label for="lastName">Last Name: </label>
-    <input id="lastName" type="text" formControlName="lastName" />
+    <div class="mb-3">
+    <label class="form-label" for="lastName">Last Name: </label>
+    <input class="form-control" id="lastName" type="text" formControlName="lastName" />
     </div>
 
     <div formGroupName="contact">
         <h2>Contact Details</h2>
-        <div>
-        <label for="email">Email: </label>
-        <input id="email" type="text" formControlName="email" />
+        <div class="mb-3">
+        <label class="form-label" for="exampleInputEmail1" >Email: </label>
+        <input class="form-control" id="exampleInputEmail1" type="email" formControlName="email" />
         </div>
-        <div>
-        <label for="mobile">Mobile: </label>
-        <input id="mobile" type="text" formControlName="mobile" />
+        <div class="mb-3">
+        <label class="form-label" for="mobile">Mobile: </label>
+        <input class="form-control" id="mobile" type="phone" formControlName="mobile" />
         </div>
       </div>
 
-    <div>
-    <label for="additionalNotes">Additional Notes: </label>
-    <input id="additionalNotes" type="text" formControlName="additionalNotes" />
+    <div class="mb-3">
+    <label class="form-label" for="additionalNotes">Additional Notes: </label>
+    <input class="form-control" id="additionalNotes" type="text" formControlName="additionalNotes" />
     </div>
     
     <p>Complete the form to enable button.</p>
-    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    <button class="btn btn-primary" type="submit" [disabled]="!profileForm.valid">Submit</button>
   </form>
-  </div>
