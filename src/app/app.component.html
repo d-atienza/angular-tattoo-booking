@@ -14,20 +14,41 @@
 </nav>
 </div>
 
-<h1>{{title}}</h1>
+<!-- <h1>{{title}}</h1> -->
+
+  <div class="shadow p-3 mb-5 bg-body rounded">
+                  <div class="p-6 text-center">
+                    <h3 class="mb-2">Ready to Get Inked?</h3>
+                    <p class="text-muted-foreground text-sm mb-4">
+                      Choose a design from our gallery to start your booking
+                    </p>
+                    <div class="text-xs text-muted-foreground">
+                      Step 1: Select Design → Step 2: Choose Details → Step 3: Book
+                    </div>
+                  </div>
+                </div>
 
 <br/>
+  <div class="shadow p-3 mb-5 bg-body rounded">
 <h2>please select an option:</h2>
 <section class="results" id="Designs">
       @for(tattooOptions of tattooOptions; track $index) {
         <app-tattoo-gallery [tattooOptions]="tattooOptions"></app-tattoo-gallery>
       }
 </section>
+</div>
+
 <br/>
+  <div class="shadow p-3 mb-5 bg-body rounded">
 <section id="Details">
   <app-tattoo-details></app-tattoo-details>
 </section>
+  </div>
+
 <br/>
+  <div class="shadow p-3 mb-5 bg-body rounded">
+
 <section id="Contact">
   <app-form-details></app-form-details>
 </section>
+</div>
