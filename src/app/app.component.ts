@@ -15,21 +15,7 @@ export class AppComponent {
 [x: string]: any;
   title = 'Dani\'s Tattoo Booking';
 
-  tattooOptions: TattooDesignOptions[] = [
-    {
-      id: 1,
-      title: 'A1',
-      category: 'Flash',
-      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQ6wLbAn7aIIt23c-fPy3Wp0HcYqJYj-4cw&s',
-      description: 'Pepe The Frog'
-    },
-    { id: 2,
-      title: 'A2',
-      category: 'Flash',
-      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU44pORy1uY_CYPpUs5unLlKhOAulnNgRosA&s',
-      description: 'Pepe The Frog'
-    }
-  ];
+  
 
   
 }

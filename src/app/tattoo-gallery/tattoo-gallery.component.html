@@ -1,4 +1,15 @@
+<div class="col">
+<p>You select your team {{ selectedTeam }} using viewChild</p>
+	<select #teams (change)="onSelected()">
+		<option default>Pick a team</option>
+		<option>Lakers</option>	
+		<option>Miami</option>
+		<option>Cleveland</option>
+	</select>
+</div>
 
+
+<!-- 
 <button class="btn btn-dark" (click)="showMSG()">
       <img
         class="option-image"
@@ -8,8 +19,4 @@
       />
       <h2 class="option-heading">{{ tattooOptions().title }}</h2>
       <p class="option-category">{{ tattooOptions().category }}</p>
-</button>
-
-
-
-
+</button> -->
