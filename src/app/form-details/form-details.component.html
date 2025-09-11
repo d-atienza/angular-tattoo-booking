@@ -1,7 +1,7 @@
 <!-- design selection -->
 <div class="col">
-<p>You select your Tattoo Design {{ selectedDesign }} using viewChild</p>
-	<select #designs (change)="onSelected()">
+<p>You select your desired design:</p>
+	<select [(ngModel)]="form.selectedDesign">
 		<option default>Pick a design</option>
 		<option>A1</option>	
 		<option>A2</option>	
@@ -14,7 +14,7 @@
 <div class="col">
 <p>If the area is not included in the dropdown list, it is not available to be tattooed on at the moment.</p>
 <p>Please select the area on your body that you would like the tattoo to be done on:</p>
-	<select #placements (change)="onSelected()">
+	<select [(ngModel)]="form.selectedPlacement">
 		<option default>Select an option:</option>
 		<option>Arm - Upper</option>	
 		<option>Arm - Lower</option>	
@@ -29,7 +29,7 @@
 <br/>
 <div class="col">
 <p>Please select the size of the tattoo you would like done:</p>
-	<select #sizes (change)="onSelected()">
+	<select [(ngModel)]="form.selectedSize">
 		<option default>Select a size:</option>
 		<option>3 inches</option>	
 		<option>4 inches</option>	
@@ -43,11 +43,11 @@
 <br/>
 <h5>Tattoo Selections:</h5>
 <section>
-    <label>Design Selected: {{ selectedDesign }}</label>
+    <label>Design Selected: {{ form.selectedDesign }}</label>
     <br/>
-    <label>Tattoo Placement: {{ selectedPlacement }} </label>
+    <label>Tattoo Placement: {{ form.selectedPlacement }} </label>
     <br/>
-    <label>Tattoo Size: {{ selectedSize }}</label>
+    <label>Tattoo Size: {{ form.selectedSize }}</label>
     <br/>
     <label>Preferred Date Selected:</label>
   </section>

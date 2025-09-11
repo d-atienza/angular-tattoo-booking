@@ -3,10 +3,12 @@ import { FormsModule } from '@angular/forms';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 interface ContactForm {
+  selectedDesign: string,
+  selectedPlacement: string,
+  selectedSize: string,
   firstName: string,
   lastName: string,
   email: string,
-  mobile: string,
   additionalNotes: string,
 }
 
@@ -18,29 +20,14 @@ interface ContactForm {
 })
 
 export class FormDetailsComponent {
-   @ViewChild('designs') designs!: ElementRef;
-	selectedDesign = '';
-
-  @ViewChild('placements') placements!: ElementRef;
-	selectedPlacement = '';
-
-  @ViewChild('sizes') sizes!: ElementRef;
-	selectedSize = '';
-
-	onSelected():void {
-		this.selectedDesign = this.designs.nativeElement.value;
-   	this.selectedPlacement = this.placements.nativeElement.value;
-   	this.selectedSize = this.sizes.nativeElement.value;
-
-
-	}
-  
-  // contact details
+// contact details
   form : ContactForm = {
+    selectedDesign: '',
+    selectedPlacement: '',
+    selectedSize: '',
     firstName: '',
     lastName: '',
     email: '',
-    mobile: '',
     additionalNotes: '',
   }
 
