@@ -1,4 +1,6 @@
+<div class="shadow p-3 mb-5 bg-body rounded">
 <!-- design selection -->
+ <br/>
 <div class="col">
 <p>You select your desired design:</p>
 	<select [(ngModel)]="form.selectedDesign">
@@ -10,6 +12,7 @@
 </div>
 
 <!-- placement selection -->
+<section id="Details">
 <br/>
 <div class="col">
 <p>If the area is not included in the dropdown list, it is not available to be tattooed on at the moment.</p>
@@ -39,7 +42,11 @@
 		<option>8 inches</option>	
 	</select>
 </div>
+</section>
+</div>
 
+<div class="shadow p-3 mb-5 bg-body rounded">
+<!-- selection confirmation -->
 <br/>
 <h5>Tattoo Selections:</h5>
 <section>
@@ -52,23 +59,27 @@
     <label>Preferred Date Selected:</label>
   </section>
 
-<br/>
-<h5>Contact Details:</h5>
-<aside>All fields are required.</aside>
-<form id="contact-details">
-  <input type="text" placeholder="First Name" [(ngModel)]="form.firstName" [ngModelOptions]="{standalone: true}">
-  <br/>
-  <br/>
-  <input type="text" placeholder="Last Name" [(ngModel)]="form.lastName" [ngModelOptions]="{standalone: true}">
-  <br/>
-  <br/>
-  <input type="email" placeholder="Email" [(ngModel)]="form.email" [ngModelOptions]="{standalone: true}">
-  <br/>
-  <br/>
-  <textarea placeholder="Additional Notes" [(ngModel)]="form.additionalNotes" [ngModelOptions]="{standalone: true}"></textarea>
-  <br/>
-  <br/>
-  <button type="button" (click)="submit()">Submit</button>
-  </form>
+<!-- contact details -->
+ <br/>
+  <section id="Contact">
+    <h5>Contact Details:</h5>
+    <aside>All fields are required.</aside>
+      <form id="contact-details">
+        <input type="text" placeholder="First Name" [(ngModel)]="form.firstName" [ngModelOptions]="{standalone: true}">
+        <br/>
+        <br/>
+        <input type="text" placeholder="Last Name" [(ngModel)]="form.lastName" [ngModelOptions]="{standalone: true}">
+        <br/>
+        <br/>
+        <input type="email" placeholder="Email" [(ngModel)]="form.email" [ngModelOptions]="{standalone: true}">
+        <br/>
+        <br/>
+        <textarea placeholder="Additional Notes" [(ngModel)]="form.additionalNotes" [ngModelOptions]="{standalone: true}"></textarea>
+        <br/>
+        <br/>
+        <button type="button" (click)="submit()">Submit</button>
+      </form>
+  </section>
+</div>
 
   

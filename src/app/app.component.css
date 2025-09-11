@@ -27,14 +27,27 @@ button {
 
 .column-container {
   display: flex;
-  justify-content: space-between;
-  margin: 4rem;
+  flex-direction: column;
+  margin: 1rem 4rem 1rem 4rem;
+
+  @media screen and (min-width: 1024px){
+    justify-content: space-between;
+    flex-direction: row;
+
+  }
 }
 
 .left-column {
-  width: 60%;
+  width: 100%;
+
+  @media screen and (min-width: 1024px){
+    width: 60%;  
+  }
 }
 
 .right-column {
-  width: 35%;
+  width: 100%;
+  @media screen and (min-width: 1024px){
+    width: 35%;  
+  }
 }

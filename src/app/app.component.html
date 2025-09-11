@@ -2,9 +2,6 @@
 
 <nav class="navbar sticky-top navbar-dark bg-dark">
   <div class="container-md">
-    <!-- <a class="navbar-brand" href="#">
-      <img src="" alt="" width="35" height="35" class="d-inline-block align-text-top">
-    </a> -->
     <a class="navbar-brand " href="#Designs">Designs</a>
     <a class="navbar-brand " href="#Details">Details</a>
     <a class="navbar-brand " href="#Booking">Booking</a>
@@ -12,18 +9,8 @@
   </div>
 </nav>
 
-<div class="column-container">
-<!-- left column -->
-    <div class="left-column">
-    <div class="shadow p-3 mb-5 bg-body rounded">
-      <h2>available designs:</h2>
-              <app-tattoo-gallery></app-tattoo-gallery>
-    </div>
-  </div>
-
-<!-- right column -->
- <div class="right-column">
-  <div class="shadow p-3 mb-5 bg-body rounded">
+<!-- booking process -->
+  <div class="shadow p-3 bg-body rounded">
     <div class="p-6 text-center">
       <h3 class="mb-2">Ready to Get Inked?</h3>
       <div class="text-xs text-muted-foreground">
@@ -34,19 +21,23 @@
       </div>
     </div>
   </div>
-
   <br/>
-  <div class="shadow p-3 mb-5 bg-body rounded">
-    <section id="Booking">
-      <app-calendar-details></app-calendar-details>
-    </section>
-  </div>
 
-<br/>
-  <div class="shadow p-3 mb-5 bg-body rounded">
-    <section id="Contact">
+<!-- left column -->
+  <div class="column-container">
+    <div class="left-column">
+      <app-tattoo-gallery></app-tattoo-gallery>
+    </div>
+
+<!-- right column -->
+  <div class="right-column">
+    <div class="shadow p-3 mb-5 bg-body rounded">
+      <section id="Booking">
+        <app-calendar-details></app-calendar-details>
+      </section>
+    </div>
+
+    <br/>
       <app-form-details></app-form-details>
-    </section>
-</div>
-</div>
+  </div>
 </div>
