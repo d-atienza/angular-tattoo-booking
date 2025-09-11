@@ -1,10 +1,53 @@
+<!-- design selection -->
+<div class="col">
+<p>You select your Tattoo Design {{ selectedDesign }} using viewChild</p>
+	<select #designs (change)="onSelected()">
+		<option default>Pick a design</option>
+		<option>A1</option>	
+		<option>A2</option>	
+		<option>A3</option>	
+	</select>
+</div>
+
+<!-- placement selection -->
+<br/>
+<div class="col">
+<p>If the area is not included in the dropdown list, it is not available to be tattooed on at the moment.</p>
+<p>Please select the area on your body that you would like the tattoo to be done on:</p>
+	<select #placements (change)="onSelected()">
+		<option default>Select an option:</option>
+		<option>Arm - Upper</option>	
+		<option>Arm - Lower</option>	
+		<option>Leg - Upper</option>	
+		<option>Leg - Lower</option>	
+    <option>Back - Upper</option>	
+		<option>Back - Lower</option>	
+	</select>
+</div>
+
+<!-- size selection -->
+<br/>
+<div class="col">
+<p>Please select the size of the tattoo you would like done:</p>
+	<select #sizes (change)="onSelected()">
+		<option default>Select a size:</option>
+		<option>3 inches</option>	
+		<option>4 inches</option>	
+		<option>5 inches</option>	
+		<option>6 inches</option>	
+		<option>7 inches</option>	
+		<option>8 inches</option>	
+	</select>
+</div>
+
+<br/>
 <h5>Tattoo Selections:</h5>
 <section>
-    <label>Design Selected:</label>
+    <label>Design Selected: {{ selectedDesign }}</label>
     <br/>
-    <label>Tattoo Placement:</label>
+    <label>Tattoo Placement: {{ selectedPlacement }} </label>
     <br/>
-    <label>Tattoo Size:</label>
+    <label>Tattoo Size: {{ selectedSize }}</label>
     <br/>
     <label>Preferred Date Selected:</label>
   </section>
@@ -15,13 +58,15 @@
 <form id="contact-details">
   <input type="text" placeholder="First Name" [(ngModel)]="form.firstName" [ngModelOptions]="{standalone: true}">
   <br/>
+  <br/>
   <input type="text" placeholder="Last Name" [(ngModel)]="form.lastName" [ngModelOptions]="{standalone: true}">
+  <br/>
   <br/>
   <input type="email" placeholder="Email" [(ngModel)]="form.email" [ngModelOptions]="{standalone: true}">
   <br/>
-  <input type="text" placeholder="Mobile" [(ngModel)]="form.mobile" [ngModelOptions]="{standalone: true}">
   <br/>
   <textarea placeholder="Additional Notes" [(ngModel)]="form.additionalNotes" [ngModelOptions]="{standalone: true}"></textarea>
+  <br/>
   <br/>
   <button type="button" (click)="submit()">Submit</button>
   </form>

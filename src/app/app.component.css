@@ -24,3 +24,17 @@ button {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem;
+}
+
+.left-column {
+  width: 60%;
+}
+
+.right-column {
+  width: 35%;
+}
