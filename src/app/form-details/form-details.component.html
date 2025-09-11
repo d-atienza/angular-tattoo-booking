@@ -1,16 +1,49 @@
 <div class="shadow p-3 mb-5 bg-body rounded">
 <!-- design selection -->
- <br/>
+<br/>
 <div class="col">
-<p>You select your desired design:</p>
+<p>Select your desired design:</p>
 	<select [(ngModel)]="form.selectedDesign">
 		<option default>Pick a design</option>
+		<option>Custom</option>	
 		<option>A1</option>	
 		<option>A2</option>	
-		<option>A3</option>	
+		<option>A3</option>
+		<option>A4</option>	
+		<option>A5</option>	
+		<option>R0</option>	
+		<option>R1</option>	
+		<option>W1</option>	
+		<option>R2</option>	
+		<option>R3</option>	
+		<option>R4</option>	
+		<option>R5</option>	
+		<option>S1</option>	
+		<option>S2</option>	
+		<option>S3</option>	
+		<option>S4</option>	
+		<option>S5</option>	
+		<option>K1</option>	
+		<option>K2</option>	
+		<option>F1</option>	
+		<option>R6</option>	
+		<option>W1</option>	
+		<option>W2</option>	
+		<option>W3</option>	
+		<option>W4</option>	
+		<option>W5</option>	
+		<option>W6</option>	
+		<option>W7</option>	
+		<option>W8</option>	
+		<option>W9</option>	
+		<option>W10</option>	
+		<option>S6</option>	
+		<option>S7</option>	
+		<option>S8</option>	
 	</select>
 </div>
-
+<br/>
+<hr>
 <!-- placement selection -->
 <section id="Details">
 <br/>
@@ -27,7 +60,8 @@
 		<option>Back - Lower</option>	
 	</select>
 </div>
-
+<br/>
+<hr>
 <!-- size selection -->
 <br/>
 <div class="col">
@@ -46,6 +80,30 @@
 </div>
 
 <div class="shadow p-3 mb-5 bg-body rounded">
+  <section id="Booking">
+<!-- booking selection -->
+ <div class="col">
+    <p>Autumn Availability💕</p>
+    <p>[September - November, Closed in December]</p>
+    <p>Desired appointment date & time:</p>
+      <select [(ngModel)]="form.selectedDate">
+        <option default>Pick time slot:</option>
+        <option>Sunday, Sept 21st 11AM</option>
+        <option>Sunday, Sept 28th 11AM</option>
+        <option>Sunday, Oct 5th 11AM</option>
+        <option>Sunday, Oct 12th 11AM</option>
+        <option>Sunday, Oct 26th 11AM</option>
+        <option>Sunday, Nov 9th 11AM</option>
+        <option>Sunday, Oct 26th 11AM</option>
+        <option>Sunday, Oct 23th 11AM</option>
+        <option>Maybe a Saturday at 11AM?</option>
+      </select>
+  </div>
+  </section>
+</div>
+
+
+<div class="shadow p-3 mb-5 bg-body rounded">
 <!-- selection confirmation -->
 <br/>
 <h5>Tattoo Selections:</h5>
@@ -56,7 +114,7 @@
     <br/>
     <label>Tattoo Size: {{ form.selectedSize }}</label>
     <br/>
-    <label>Preferred Date Selected:</label>
+    <label>Preferred Date: {{ form.selectedDate }}</label>
   </section>
 
 <!-- contact details -->

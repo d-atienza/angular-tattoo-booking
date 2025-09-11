@@ -1,25 +1,22 @@
-.option-heading {
-  color: var(--primary-color);
-  padding: 10px 20px 0 20px;
-}
-.option-image {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
-.option-category {
-  padding: 10px 20px 20px 20px;
-}
-.option-category::before {
-  content: url("/assets/location-pin.svg") / "";
+p {
+  margin-top: 0px;
+  margin-bottom:0px;
 }
 
-section.option a {
-  padding-left: 20px;
-  text-decoration: none;
-  color: var(--primary-color);
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-section.option a::after {
-  content: "\203A";
-  margin-left: 5px;
+
+.design-container {
+  margin: 0.25rem;
+  background-color:bisque;
+  text-align: center;
+
+  & img {
+    height:160px;
+    width:157px;
+  }
 }
