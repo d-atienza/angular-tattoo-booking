@@ -4,7 +4,7 @@
 
 <!-- design selection -->
 <div class="col">
-<p>Select your desired <strong>design:</strong></p>
+<p>Please select your desired <strong>design:</strong></p>
 	<select [(ngModel)]="form.selectedDesign">
 		<option default>Pick a design</option>
 		<option>Custom</option>	
@@ -121,7 +121,7 @@
  <br/>
   <section id="Contact">
     <h5>Contact Details</h5>
-    <p style="color: crimson;">All fields are required.</p>
+    <p style="color: crimson;"><i>All fields are required.</i></p>
       <form id="contact-details">
         <input type="text" placeholder="First Name" [(ngModel)]="form.firstName" [ngModelOptions]="{standalone: true}">
         <br/>
