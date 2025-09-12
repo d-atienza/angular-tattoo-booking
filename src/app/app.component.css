@@ -12,6 +12,9 @@ body {
   background-color: rgb(145, 54, 57);
   color: whitesmoke;
   text-align: center;
+  & p {
+    margin:0;
+  }
 }
 
 .header {
