@@ -9,7 +9,7 @@ interface ContactForm {
   selectedDate: string,
   firstName: string,
   lastName: string,
-  email: string,
+  customerEmail: string,
   additionalNotes: string,
 }
 
@@ -29,7 +29,7 @@ export class FormDetailsComponent {
     selectedDate: '',
     firstName: '',
     lastName: '',
-    email: '',
+    customerEmail: '',
     additionalNotes: '',
   }
 
