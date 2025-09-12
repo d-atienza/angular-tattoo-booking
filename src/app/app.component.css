@@ -8,6 +8,12 @@ body {
 }
 
 /* Header */
+.warning-info {
+  background-color: rgb(145, 54, 57);
+  color: whitesmoke;
+  text-align: center;
+}
+
 .header {
   border-bottom: 1px solid #e5e5e5;
   background-color: #ffffff;
