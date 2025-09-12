@@ -1,8 +1,10 @@
 <div class="shadow p-3 mb-5 bg-body rounded">
+<section id="Details">
+<h5>Details</h5>
+
 <!-- design selection -->
-<br/>
 <div class="col">
-<p>Select your desired design:</p>
+<p>Select your desired <strong>design:</strong></p>
 	<select [(ngModel)]="form.selectedDesign">
 		<option default>Pick a design</option>
 		<option>Custom</option>	
@@ -45,11 +47,10 @@
 <br/>
 <hr>
 <!-- placement selection -->
-<section id="Details">
 <br/>
 <div class="col">
 <p>If the area is not included in the dropdown list, it is not available to be tattooed on at the moment.</p>
-<p>Please select the area on your body that you would like the tattoo to be done on:</p>
+<p>Please select the <strong>area on your body</strong> that you would like the tattoo to be done on:</p>
 	<select [(ngModel)]="form.selectedPlacement">
 		<option default>Select an option:</option>
 		<option>Arm - Upper</option>	
@@ -65,7 +66,7 @@
 <!-- size selection -->
 <br/>
 <div class="col">
-<p>Please select the size of the tattoo you would like done:</p>
+<p>Please select the <strong>size</strong> of the tattoo you would like done:</p>
 	<select [(ngModel)]="form.selectedSize">
 		<option default>Select a size:</option>
 		<option>3 inches</option>	
@@ -83,9 +84,9 @@
   <section id="Booking">
 <!-- booking selection -->
  <div class="col">
-    <p>Autumn Availability💕</p>
-    <p>[September - November, Closed in December]</p>
-    <p>Desired appointment date & time:</p>
+	<h5>Booking</h5>
+    <p>Autumn 2025 Availability</p>
+    <p><strong>Preferred</strong> appointment date:</p>
       <select [(ngModel)]="form.selectedDate">
         <option default>Pick time slot:</option>
         <option>Sunday, Sept 21st</option>
@@ -105,23 +106,22 @@
 
 <div class="shadow p-3 mb-5 bg-body rounded">
 <!-- selection confirmation -->
-<br/>
-<h5>Tattoo Selections:</h5>
+<h5>Recap</h5>
 <section>
-    <label>Design Selected: {{ form.selectedDesign }}</label>
+    <label>Design Selected: <strong>{{ form.selectedDesign }}</strong></label>
     <br/>
-    <label>Tattoo Placement: {{ form.selectedPlacement }} </label>
+    <label>Tattoo Placement: <strong>{{ form.selectedPlacement }} </strong></label>
     <br/>
-    <label>Tattoo Size: {{ form.selectedSize }}</label>
+    <label>Tattoo Size: <strong>{{ form.selectedSize }}</strong></label>
     <br/>
-    <label>Preferred Date: {{ form.selectedDate }}</label>
+    <label>Preferred Date: <strong>{{ form.selectedDate }}</strong></label>
   </section>
 
 <!-- contact details -->
  <br/>
   <section id="Contact">
-    <h5>Contact Details:</h5>
-    <aside>All fields are required.</aside>
+    <h5>Contact Details</h5>
+    <p style="color: crimson;">All fields are required.</p>
       <form id="contact-details">
         <input type="text" placeholder="First Name" [(ngModel)]="form.firstName" [ngModelOptions]="{standalone: true}">
         <br/>

@@ -40,12 +40,12 @@ export class FormDetailsComponent {
       .then(
         () => {
           console.log('Sent!');
-          window.confirm("Enquiry has been submitted :)");
+          window.confirm("Enquiry has been submitted :) An email will be sent to you shortly!");
           let form = document.getElementById('contact-details')
           if(form) (form as HTMLFormElement).reset(); 
         },
         (error) => {
-          console.log('Failed :(', (error as EmailJSResponseStatus).text);
+          window.confirm('Submission failed :(');
         },)
   }
 }

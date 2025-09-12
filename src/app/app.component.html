@@ -1,6 +1,14 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<nav class="navbar sticky-top navbar-dark bg-dark">
+<header class="header">
+        <div class="header-content">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/012/174/344/small_2x/simple-stars-sparkle-icon-png.png" width="40px" height="40px"/>
+              <h5 class="header-title">sleepytimetea studio</h5>
+        </div>
+</header>
+
+
+<nav class="navbar sticky-top navbar-dark">
   <div class="container-md">
     <a class="navbar-brand " href="#Designs">Designs</a>
     <a class="navbar-brand " href="#Details">Details</a>
@@ -12,12 +20,13 @@
 <!-- booking process -->
   <div class="shadow p-3 bg-body rounded">
     <div class="p-6 text-center">
-      <h3 class="mb-2">Ready to Get Inked?</h3>
-      <div class="text-xs text-muted-foreground">
-        Choose a design from our gallery to start your booking
+      <h3 class="process-prompt">Ready to Get Inked?</h3>
+      <img src="data:image/png;base64,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" width="50px" height="50px"/>
+      <div class="process-info">
+        Choose a design from the gallery to start your booking
       </div>
-      <div class="text-xs text-muted-foreground">
-        Step 1: Select Design → Step 2: Choose Details → Step 3: Book
+      <div class="process-info">
+        Step 1: <strong>Select Design</strong> → Step 2: <strong>Choose Details</strong> → Step 3: <strong class="emphasis">Book</strong>
       </div>
     </div>
   </div>

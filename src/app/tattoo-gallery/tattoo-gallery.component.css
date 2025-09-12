@@ -7,12 +7,17 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.design-header {
+   text-align: center;
 }
 
 .design-container {
   margin: 0.25rem;
-  background-color:bisque;
+  background-color:rgb(145, 54, 57);
+  color: whitesmoke;
   text-align: center;
 
   & img {
