@@ -66,13 +66,6 @@ tattooDesigns: TattooDesignOptions[] = [
     description: ""
   },
   {
-    id: 9,
-    title: "W1",
-    category: "Flash",
-    imageURL: "https://live.staticflickr.com/65535/54777587031_519365a662_n.jpg",
-    description: ""
-  },
-  {
     id: 10,
     title: "R2",
     category: "Flash",
