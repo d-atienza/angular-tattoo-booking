@@ -36,7 +36,7 @@ export class FormDetailsComponent {
   submit() {
     console.log(this.form)
 
-    emailjs.send('service_zm2klxz', 'template_mv5bhni', {...this.form}, {publicKey: '2RTRStL7xKPYzKNMx'})
+    emailjs.send('service_7hc6u9v', 'template_mv5bhni', {...this.form}, {publicKey: '2RTRStL7xKPYzKNMx'})
       .then(
         () => {
           console.log('Sent!');
